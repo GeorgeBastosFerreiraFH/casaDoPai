@@ -1,0 +1,112 @@
+.container {
+  background-color: #ffffff;
+  border-radius: 14px;
+  margin: 14px;
+  width: 40vw;
+  overflow: hidden;
+}
+
+section {
+  background: #1b262c;
+  padding: 24px;
+
+  && h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #eeeeee;
+    text-align: center;
+  }
+}
+
+form {
+  padding: 18px;
+
+  & button {
+    background-color: #1b262c;
+    color: #eeeeee;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+  }
+
+  & button:hover {
+    opacity: 0.8;
+  }
+}
+
+.container-inputs {
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  && input {
+    display: block;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    outline-color: #908a8a;
+
+    && .data {
+      content: normal;
+    }
+  }
+
+  && .checkbox {
+    display: flex;
+    gap: 8px;
+    && label {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  && span {
+    bottom: -8px;
+    left: 0;
+    color: #ff3b25;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: #1b262c;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+
+  & p {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  & span {
+    font-weight: normal;
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    opacity: 0.5;
+  }
+}
+
+.container-inputs.error a {
+  color: #ff3b25;
+  visibility: visible;
+}
